@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{deedy-resume-openfont}
+\usepackage{ragged2e}
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+ 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\flushleft \includegraphics[height=2.75cm, width=2.25cm]{aditya1.jpg} 
+
+\vspace{-30mm}
+
+\namesection {}{\Huge \custombold{Aditya Sharma}}
+{ % Your name
+Rütscher Straße 165, 52072 Aachen, DE\\
+\href{mailto:aditya.sharma@rwth-aachen.de}{\textcolor{orange}{aditya.sharma@rwth-aachen.de}} \\
+\href{tel:+4915906469476}{\textcolor{blue}{+49-(159)-06469476}}\\
+\href{https://www.linkedin.com/in/aditya-sharma-31640b94/}{\textcolor{violet}{aditya-sharma}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.35\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{RWTH Aachen University}
+\descript{M. Sc. - Management \& Engineering in Computer-Aided Mechanical Engineering}
+\location{Sept 2019 - Sept 2021 | Aachen, DE \\ CGPA: \href{https://drive.google.com/file/d/18VehWvVc0RGizYO0umbVodqh119sJ9c7/view?usp=sharing}{\custombold{\color {violet}2.9}}}
+\custombold{\color{black}{Focus: International Project Management, International Business, Professional Negotiations, Business Analysis, Macro-Economics}}
+\sectionsep
+
+\subsection{University of Petroleum \& Energy Studies}
+\descript{B. Tech. - Mechatronics Engineering}
+\location{July 2012 - July 2016 | Dehradun, IN \\ CGPA: \href{https://drive.google.com/open?id=1tQyxYVd_S5Ckdoo5GhjhP2rREm3uRMfK}{\custombold{\color {violet}2.64}}}
+\custombold{\color{black}{Focus: Mechatronics System Design, Robotics, Control system, Computational Fluid Dynamics, Micro-electro-mechanical Systems}}
+\sectionsep
+
+%\subsection{Ryan International School}
+%\location{May 2012|  Jaipur, IN \\ CGPA: \href{https://drive.google.com/open?id=1-qzKPqrDDF8GmhHoaXoKXTcWIbJY0-9_}{\custombold{\color {violet}7.8/10}}}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificates}
+\subsection {Professional}
+\href{https://drive.google.com/open?id=1ZSbZU2kIj9727twuL2duDpwSVcJF3Bav}{\custombold{\color {violet}Health, Safety and Environment}} \\
+\href{https://drive.google.com/open?id=1IcJog-NhHp5I1mDOVW-tDEg96hufaOsB}{\custombold{\color {violet}Project Management}}\\
+\href{https://drive.google.com/open?id=1sYfMLmblSJPoWDDE6Dm4wsnGFGnhENnn}{\custombold{\color {violet}Corporate Governance}}\\
+\href{https://drive.google.com/open?id=1nzi93be5eG2a_lCn3SCSCZEM42NhJneb}{\custombold{\color {violet}5S Methodology}}\\
+\href{https://drive.google.com/open?id=1iVLVNTpX3ECf9c1XeJx35mZba9_CMgwA}{\custombold{\color {violet}Business Etiquette}}\\
+\sectionsep
+\subsection{Technical}
+\href{https://drive.google.com/file/d/1KLSy2JhKAaY0HCxHK40wRrXcqlISMnkr/view?usp=sharing}{\custombold{\color {violet}Arduped Programming}}\\
+\href{https://drive.google.com/open?id=1fRdoUniS4ihsh5xUGNR0aIYMJLfp1sYG}{\custombold{\color {violet}Robot \& CNC Programming}}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\location {\textbf{\color{black} Programming}}
+\hspace{2mm}\textbullet{} \href{https://drive.google.com/file/d/1_bFXkURunzdYNMG2vf1LhxcMa8wCrCOC/view?usp=sharing}{\custombold{\color {violet}Matlab}} \textbullet {} Python \textbullet{} \LaTeX\  
+\textbullet{} C/C++ \textbullet{} PLC \\ \hspace{2mm}\textbullet{} Java \\
+
+\location {\textbf{\color{black} Design}}
+\hspace{2mm}\textbullet{} Creo Parametric \textbullet{} AutoCAD \textbullet{} ANSYS\\  
+\hspace{2mm}\textbullet{} MS Project  \textbullet{} \href{https://drive.google.com/file/d/1v5S6pNTwMw4lWtdMukApnQxdzOTWIblV/view?usp=sharing}{\custombold{\color {violet}Simulink}} \textbullet{} \href {https://drive.google.com/open?id=1AESUhAJ6J39_PE8eDsRS3kBpl_ozGkYQ}{\custombold{\color{violet}CATIA V5}}\\
+
+\location {\textbf{\color{black} Official}}
+\hspace{2mm}\textbullet{} MS Office \textbullet{} Apple Productivity
+
+\sectionsep
+\section{Languages}
+\hspace{2mm}\textbullet{} Hindi \textbullet{} \href{https://drive.google.com/open?id=1pt8G220rhF8KJTLsf2CC6qOFusc0rGhH}{\custombold{\color {violet}Englisch}} \textbullet{} Deutsch (A1) \\
+\sectionsep
+
+\section{Volunteer} 
+\justify{\begin{tabular}{ll}
+Gramiksha & Rural Education Initiative\\
+ASME & American Society for \\
+& Mechanical Engineers \\ 
+
+ \href{https://drive.google.com/file/d/1E3FuWuWKo--A_L50SrUXXEMUoi3kBjcx/view?usp=sharing}{\custombold{\color {violet}YUVA}}  & Resources for Under-\\
+ & privileged Initiative \\
+\end{tabular}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\vrule{}
+\hfill 
+\begin{minipage}[t]{0.60\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Work Experience}
+\runsubsection{\flushleft Larsen \& Toubro Ltd.}
+\descript{| Senior Engineer}
+\location{\href{https://drive.google.com/open?id=1PN7ql-iWD-fzRSrX0LXh9z_U-UM-dgwE}{\custombold{\color {violet}July 2017 – July 2019}} | Visakhapatnam \& Meerut, IN}
+\justify {\color{black}{\begin{tabular}{rll}
+
+2019 & Structural, Material and Cost Analysis for Pre-Cast Fabrication of\\ 
+         & Railway Bridge Components (Under-bridge, Major Bridge, etc.) for\\
+         & Indian Eastern Freight Corridor Project.\\
+2019 & Project planning including Material and Resource Analysis, micro-\\
+         & scheduling, Project Scope and Cost Analysis \& Estimation such as\\
+         &  structural work-data analysis for timeline scheduling along with\\
+         &  productivity optimisation.\\
+2018 & Implementation of 5S-Method in workspace to enhance productivity\\
+         & in compliance with Safety Standards.\\
+2018 & Inspection Timeline Optimisation via development of automated\\
+         & inspection mechanism which uses scanned FE-Model, CAD Model \\
+         & and their superimposition to map structural fabrication offsets.\\
+2018 & Productivity analysis for fabrication and modification of a 3700MT\\
+         & heavy structural assembly components for Advanced Technological\\
+         & Vessel Project in collaboration with L\&T Defence IC \& Indian Navy.\\
+2018 & Structural analysis for Synchronous pooled Hydraulic Strand Jack\\
+         & Installations (200MT lifting capacity each) to lift the Vessel.\\
+2017 & Resource and Design Optimisation for structural fabrication of \\
+         & Vessel Equipments and Components.\\
+         
+
+\end{tabular}}}
+
+\runsubsection{\flushleft Larsen \& Toubro Ltd.}
+\descript{| Trainee}
+\location{\href{https://drive.google.com/open?id=1TUPcLL7S8tDHZq7AKHKuEer9CCYh05Jy}{\custombold{\color {violet}June 2015 - July 2015}} | Navi Mumbai, IN}
+\descript{Electrical \& Automation Division}
+\justify{\begin{tightemize}
+\item Process constraints, variables \& Automation PLC logic analysis.
+\item Development of control system \& HMI integration.
+\end{tightemize}}
+
+\sectionsep
+
+\runsubsection{\flushleft Larsen \& Toubro Ltd.}
+\descript{| Trainee}
+\location{\href{https://drive.google.com/open?id=1gBf9b0AE59y9JEqrgxg7q2iDaliEEjeO}{\custombold{\color {violet}May 2014 - June 2014}} | Mumbai, IN}
+\descript{Heavy Engineering Division}
+\justify{\begin{tightemize} 
+\item Part \& Assembly Modelling, Rendering \& Drafting of CAD with AutoCAD.
+\item Implementation of PLC Logics for the control panel of a Semi-Automatic Linear TIG Arc-Welding Machine.
+\end{tightemize}}
+
+\sectionsep
+
+\section{Projects}
+
+\runsubsection{\flushleft Major Project} 
+\location{| Dehradun, IN}
+\descript{Strain Energy Power Generation}
+\justify{\begin{tightemize}
+\item Design \& Development of Spring-relay system.
+\item Cost \& Ergonomic Analysis of Electro-mechanical System.
+\item Analysis of mechanical loss, constraints, their elimination strategies and small-scale usability.
+\item Power analysis to improve rural electrical reach.
+\end{tightemize}}
+
+\sectionsep
+
+\runsubsection{\flushleft Minor Project}
+\location{| Dehradun, IN}
+\descript{Industrial Quad-rotor Robot}
+\justify{\begin{tightemize}
+\item Productivity Optimisation of an industrial environment.
+\item Design \& Development quad-rotor robot for light-payload delivery (<15 kg).
+\item Increasing manoeuvrability and fluidity of production systems.
+\item Minimising industrial logistic costs.
+\end{tightemize}}
+
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+
+\end{document}\begin{table}\end{table}
